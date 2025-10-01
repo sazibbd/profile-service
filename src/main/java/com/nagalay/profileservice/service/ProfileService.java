@@ -25,6 +25,7 @@ public class ProfileService {
         profileRepository.saveAndFlush(profileEntity);
     }
 
+
     public List<ProfileRest> getProfileList() {
         return  profileRepository.findAll().stream()
                 .map(itm->{
