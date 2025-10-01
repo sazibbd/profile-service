@@ -1,0 +1,42 @@
+### ProfileController::saveProfile
+POST http://localhost:8080/api/v1/profiles
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Sazib Khan",
+  "designation": "designation",
+  "address": "address"
+}
+
+### ProfileController::getProfilesById
+GET http://localhost:8080/api/v1/profiles/1
+Content-Type: application/json
+Accept: application/json
+
+
+### ProfileController::updateBrand
+PUT http://localhost:8099/api/v1/profiles/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "name",
+  "designation": "designation",
+  "address": "address"
+}
+
+### ProfileController::getAllProfile
+GET http://localhost:8099/api/v1/profiles
+Content-Type: application/json
+Accept: application/json
+
+
+
+### ProfileController::deleteProfile
+DELETE http://localhost:8099/api/v1/profiles/8
+Content-Type: application/json
+Accept: application/json
+
+
+
