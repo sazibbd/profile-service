@@ -1,4 +1,4 @@
-name: Read and Output Service folder check
+name: Read and Output service forder name  check
 
 on:
   push:
@@ -12,9 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Check if index.html exists
+      - name: Check if service forder name check exists
         run: |
-          if [ -d "com.nagalay.profileservice/service" ]; then
+          if [ -d "src/main/java/com/nagalay/profileservice/service" ]; then
           echo "Folder exists!"
           else
           echo "Folder not found!"
